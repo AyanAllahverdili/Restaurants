@@ -19,37 +19,17 @@ struct ContentView: View {
     
     
     
-    var restaurantList1 = ["Restoran 1", "Restoran 2", "Restoran 3", "Restoran 4", "Restoran 5"]
-    
-    
     var body: some View {
         
         List {
             ForEach(0...restaurantList.count-1, id: \.self) { index in
-                
-                VStack(alignment: .leading, spacing: 10) {
-                    Image(restaurantList[index].image)
-                        .resizable()
-                        .scaledToFill()
-                        .frame(height: 180)
-                        .cornerRadius(20)
-                    VStack(alignment: .leading){
-                        Text (restaurantList[index].title)
-                            .font(.system(.title2 , design: .rounded))
-                            .fontWeight(.semibold)
-                        Text(restaurantList[index].type.description)
-                            .font(.system(.headline , design: .rounded))
-                            .fontWeight(.medium)
-                        
-                        Text(restaurantList[index].location)
-                            .font(.system(.subheadline , design: .rounded))
-                            .foregroundColor(.gray)
-                        }
-                    .padding(.horizontal,4)
-                    
-                }
-                .padding(.vertical,8)
-                .listRowSeparator(.hidden)
+                RestaurantView(
+                    title: restaurantList[index].title,
+                    type: restaurantList[index].type,
+                    location: restaurantList[index].location,
+                    image: restaurantList[index].image
+                )
+         
             }
             
         }
