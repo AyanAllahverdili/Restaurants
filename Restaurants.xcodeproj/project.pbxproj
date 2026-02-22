@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE243E3A2F4B023400347EC6 /* RestaurantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE243E392F4B022900347EC6 /* RestaurantDetailView.swift */; };
 		CE76E66E2F4AE6C50055F58C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE76E6672F4AE6C50055F58C /* Assets.xcassets */; };
 		CE76E66F2F4AE6C50055F58C /* OrderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE76E6692F4AE6C50055F58C /* OrderType.swift */; };
 		CE76E6702F4AE6C50055F58C /* RestaurantModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE76E66A2F4AE6C50055F58C /* RestaurantModels.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE243E392F4B022900347EC6 /* RestaurantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailView.swift; sourceTree = "<group>"; };
 		CE76E6672F4AE6C50055F58C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE76E6682F4AE6C50055F58C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CE76E6692F4AE6C50055F58C /* OrderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderType.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 		CE76E6752F4AE76C0055F58C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CE243E392F4B022900347EC6 /* RestaurantDetailView.swift */,
 				CE76E6682F4AE6C50055F58C /* ContentView.swift */,
 				CE76E66C2F4AE6C50055F58C /* RestaurantView.swift */,
 			);
@@ -155,6 +158,7 @@
 			files = (
 				CE76E66F2F4AE6C50055F58C /* OrderType.swift in Sources */,
 				CE76E6702F4AE6C50055F58C /* RestaurantModels.swift in Sources */,
+				CE243E3A2F4B023400347EC6 /* RestaurantDetailView.swift in Sources */,
 				CE76E6712F4AE6C50055F58C /* ContentView.swift in Sources */,
 				CE76E6722F4AE6C50055F58C /* RestaurantsApp.swift in Sources */,
 				CE76E6732F4AE6C50055F58C /* RestaurantView.swift in Sources */,

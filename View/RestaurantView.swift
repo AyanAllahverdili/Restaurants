@@ -69,22 +69,7 @@ struct RestaurantView: View {
             }
 
         }
-//        .onTapGesture {
-//            showOptions.toggle()
-//        }
-//        .confirmationDialog(
-//            "What do you want to do?",
-//            isPresented:  $showOptions,
-//            titleVisibility: .visible
-//        ) {
-//            Button(restaurant.isFavorite ?  "Remove from favorite": "Mark as favorite" ){
-//                self.restaurant.isFavorite.toggle()
-//            }
-//            
-//            Button("Show directions"){
-//                self.showError.toggle()
-//            }
-//        }
+
           .alert("Not working", isPresented: $showError){
               
             Button("OK"){
@@ -95,19 +80,4 @@ struct RestaurantView: View {
         }
     }
 }
-//struct RestaurantView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        RestaurantView(restaurant: Rest)
-//    
-//            RestaurantView(
-//            title: "Numune 2",
-//            type: .coffeShop,
-//            location: "Paris",
-//            image: "haigh"
-//        )
-//            .preferredColorScheme(.dark)
-//            .previewDisplayName("Restaurant in dark mode")
-//    }
-//        
-//    }
 

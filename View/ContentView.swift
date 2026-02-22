@@ -46,34 +46,41 @@ struct ContentView: View {
     
     
     var body: some View {
-        
-        List {
-            ForEach(0...$restaurantList.count-1, id: \.self) { index in
-                RestaurantView(restaurant: $restaurantList[index])
-                    .swipeActions(edge: .leading, allowsFullSwipe: false) {
-                        Button {
-                            //
-                        } label: {
-                            Image(systemName: "heart")
-                        }
-                        .tint(.green)
+        NavigationStack{
+            List {
+                ForEach(0...$restaurantList.count-1, id: \.self) { index in
+                    NavigationLink(destination: RestaurantDetailView(restaurant:restaurantList[index])){
                         
-                        Button {
-                            //
-                        } label: {
-                            Image(systemName:"square.and.arrow.up")
-                        }
-                        .tint(.orange)
-
-
+                        
+                        RestaurantView(restaurant: $restaurantList[index])
                     }
-               }
-            
-            .onDelete(perform: {IndexSet in
-                restaurantList.remove(atOffsets:IndexSet)
-            })
+                        .swipeActions(edge: .leading, allowsFullSwipe: false) {
+                            Button {
+                                //
+                            } label: {
+                                Image(systemName: "heart")
+                            }
+                            .tint(.green)
+                            
+                            Button {
+                                //
+                            } label: {
+                                Image(systemName:"square.and.arrow.up")
+                            }
+                            .tint(.orange)
+                            
+                            
+                        }
+                }
+                
+                .onDelete(perform: {IndexSet in
+                    restaurantList.remove(atOffsets:IndexSet)
+                })
+                .listRowSeparator(.hidden)
+            }
+            .navigationTitle("Food Pin")
+            .navigationBarTitleDisplayMode(.automatic)
         }
-        
         .listStyle(.plain)
         
     }
