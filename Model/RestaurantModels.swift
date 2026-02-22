@@ -12,4 +12,5 @@ struct Restaurants{
     var type: OrderType
     var location: String
     var image: String
+    var isFavorite: Bool
 }
