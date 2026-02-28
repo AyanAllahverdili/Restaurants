@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CE243E3A2F4B023400347EC6 /* RestaurantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE243E392F4B022900347EC6 /* RestaurantDetailView.swift */; };
-		CE5692532F52CB5D004C7C4C /* Montserrat-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE5692512F52CB5D004C7C4C /* Montserrat-Italic-VariableFont_wght.ttf */; };
-		CE5692542F52CB5D004C7C4C /* Montserrat-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE5692522F52CB5D004C7C4C /* Montserrat-VariableFont_wght.ttf */; };
 		CE76E66E2F4AE6C50055F58C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE76E6672F4AE6C50055F58C /* Assets.xcassets */; };
 		CE76E66F2F4AE6C50055F58C /* OrderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE76E6692F4AE6C50055F58C /* OrderType.swift */; };
 		CE76E6702F4AE6C50055F58C /* RestaurantModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE76E66A2F4AE6C50055F58C /* RestaurantModels.swift */; };
@@ -18,13 +16,13 @@
 		CE76E6732F4AE6C50055F58C /* RestaurantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE76E66C2F4AE6C50055F58C /* RestaurantView.swift */; };
 		CED1A6B02F4B184A00ED4585 /* Roboto-VariableFont_wdth,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CED1A6AF2F4B184A00ED4585 /* Roboto-VariableFont_wdth,wght.ttf */; };
 		CED1A6B12F4B184A00ED4585 /* Roboto-Italic-VariableFont_wdth,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CED1A6AE2F4B184A00ED4585 /* Roboto-Italic-VariableFont_wdth,wght.ttf */; };
+		CEF54C9F2F52DC9300D0C209 /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEF54C9E2F52DC9300D0C209 /* Nunito-Bold.ttf */; };
+		CEF54CA12F52DC9F00D0C209 /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEF54CA02F52DC9F00D0C209 /* Nunito-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE243E392F4B022900347EC6 /* RestaurantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailView.swift; sourceTree = "<group>"; };
 		CE5692502F52CA11004C7C4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		CE5692512F52CB5D004C7C4C /* Montserrat-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
-		CE5692522F52CB5D004C7C4C /* Montserrat-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		CE76E6672F4AE6C50055F58C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE76E6682F4AE6C50055F58C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CE76E6692F4AE6C50055F58C /* OrderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderType.swift; sourceTree = "<group>"; };
@@ -34,6 +32,8 @@
 		CE82E67E2F41A275009AE18B /* Restaurants.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Restaurants.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED1A6AE2F4B184A00ED4585 /* Roboto-Italic-VariableFont_wdth,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic-VariableFont_wdth,wght.ttf"; sourceTree = "<group>"; };
 		CED1A6AF2F4B184A00ED4585 /* Roboto-VariableFont_wdth,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-VariableFont_wdth,wght.ttf"; sourceTree = "<group>"; };
+		CEF54C9E2F52DC9300D0C209 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		CEF54CA02F52DC9F00D0C209 /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +106,8 @@
 		CED1A5BF2F4B162B00ED4585 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				CE5692512F52CB5D004C7C4C /* Montserrat-Italic-VariableFont_wght.ttf */,
-				CE5692522F52CB5D004C7C4C /* Montserrat-VariableFont_wght.ttf */,
+				CEF54CA02F52DC9F00D0C209 /* Nunito-Regular.ttf */,
+				CEF54C9E2F52DC9300D0C209 /* Nunito-Bold.ttf */,
 				CED1A6AE2F4B184A00ED4585 /* Roboto-Italic-VariableFont_wdth,wght.ttf */,
 				CED1A6AF2F4B184A00ED4585 /* Roboto-VariableFont_wdth,wght.ttf */,
 			);
@@ -175,10 +175,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE5692532F52CB5D004C7C4C /* Montserrat-Italic-VariableFont_wght.ttf in Resources */,
-				CE5692542F52CB5D004C7C4C /* Montserrat-VariableFont_wght.ttf in Resources */,
 				CED1A6B02F4B184A00ED4585 /* Roboto-VariableFont_wdth,wght.ttf in Resources */,
 				CED1A6B12F4B184A00ED4585 /* Roboto-Italic-VariableFont_wdth,wght.ttf in Resources */,
+				CEF54CA12F52DC9F00D0C209 /* Nunito-Regular.ttf in Resources */,
+				CEF54C9F2F52DC9300D0C209 /* Nunito-Bold.ttf in Resources */,
 				CE76E66E2F4AE6C50055F58C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -6,8 +6,8 @@
 	<array>
 		<string>Roboto-VariableFont_wdth,wght.ttf</string>
 		<string>Roboto-Italic-VariableFont_wdth,wght</string>
-		<string>Montserrat-Italic-VariableFont_wght.ttf</string>
-		<string>Montserrat-VariableFont_wght.ttf</string>
+		<string>Nunito-Regular.ttf</string>
+		<string>Nunito-Bold.ttf</string>
 	</array>
 </dict>
 </plist>

@@ -18,7 +18,8 @@ struct ContentView: View {
             location: "Hong Kong",
             image: "cafelore",
             isFavorite: false,
-            description: "Searching for great breakfast eateries and coffee? This place is for you. We open at 6:30 every morning, and close at 9 PM. We offer espresso and espresso based drink, such as capuccino, cafe latte, piccolo and many more. Come over and enjoy a great meal."
+            description: "Searching for great breakfast eateries and coffee? This place is for you. We open at 6:30 every morning, and close at 9 PM. We offer espresso and espresso based drink, such as capuccino, cafe latte, piccolo and many more. Come over and enjoy a great meal.",
+            phone: "050-890-56-78"
         ),
         Restaurants(
             title: "Homei",
@@ -26,7 +27,8 @@ struct ContentView: View {
             location: "London",
             image: "teakha",
             isFavorite: false,
-            description: "Very good basque food, creative dishes with terrific flavors! Donostia is a high end tapas restaurant with a friendly relaxed ambiance. Come over to enjoy awesome tapas!"
+            description: "Very good basque food, creative dishes with terrific flavors! Donostia is a high end tapas restaurant with a friendly relaxed ambiance. Come over to enjoy awesome tapas!",
+            phone: "051-678-45-64"
         ),
         Restaurants(
             title: "Donostia",
@@ -34,7 +36,8 @@ struct ContentView: View {
             location: "Baku",
             image: "waffleandwolf",
             isFavorite: false,
-            description: "Searching for great breakfast eateries and coffee? This place is for you. We open at 6:30 every morning, and close at 9 PM. We offer espresso and espresso based drink, such as capuccino, cafe latte, piccolo and many more. Come over and enjoy a great meal."
+            description: "Searching for great breakfast eateries and coffee? This place is for you. We open at 6:30 every morning, and close at 9 PM. We offer espresso and espresso based drink, such as capuccino, cafe latte, piccolo and many more. Come over and enjoy a great meal.",
+            phone: "050-890-56-78"
          ),
         Restaurants(
             title: "Barrafina",
@@ -42,7 +45,8 @@ struct ContentView: View {
             location: "Moscow",
             image: "barrafina",
             isFavorite: false,
-            description: "a collection of authentic Spanish Tapas bars in Central London! We have an open kitchen, a beautiful marble-topped bar where guests can sit and watch the chefs at work and stylish red leather stools. Lunch starts at 1 PM. Dinners starts 5:30 PM."
+            description: "a collection of authentic Spanish Tapas bars in Central London! We have an open kitchen, a beautiful marble-topped bar where guests can sit and watch the chefs at work and stylish red leather stools. Lunch starts at 1 PM. Dinners starts 5:30 PM.",
+            phone: "051-678-45-64"
         )
     ]
     

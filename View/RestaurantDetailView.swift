@@ -28,7 +28,7 @@ struct RestaurantDetailView: View {
                                 .padding(.top ,40)
                             VStack(alignment: .leading, spacing: 5){
                                 Text(restaurant.title)
-                                    .font(.custom("Montserrat-Italic-VariableFont_wght.ttf", size: 35,relativeTo: .largeTitle))
+                                    .font(.custom("Nunito-Regular", size: 35,relativeTo: .largeTitle))
                                     .bold()
                                 Text(restaurant.type.description)
                                     .font(.system(.headline, design: .rounded))
@@ -41,6 +41,22 @@ struct RestaurantDetailView: View {
                         }
                     }
                 Text(restaurant.description)
+                    .padding()
+                HStack(alignment: .top){
+                    VStack{
+                        Text("ADDRESS")
+                            .font(.system(.headline ,design: .rounded))
+                        Text(restaurant.location)
+                    }
+                    .frame(minWidth: 0,maxWidth: .infinity,alignment: .leading)
+                    VStack{
+                        Text("PHONE")
+                            .font(.system(.headline ,design: .rounded))
+                        Text(restaurant.phone)
+                    }
+                    .frame(minWidth: 0,maxWidth: .infinity,alignment: .leading)
+                }
+                .padding(.horizontal)
             }
         }
         
@@ -55,29 +71,25 @@ struct RestaurantDetailView: View {
 
             }
         }
+        .ignoresSafeArea()
     }
 }
 
-#Preview {
-    RestaurantDetailView(
-        restaurant: Restaurants(
-            title: "Cafe Deanded",
-            type: .waffleHouse,
-            location: "Baku",
-            image: "cafedeadend",
-            isFavorite: false,
-            description: "Searching for great breakfast eateries and coffee? This place is for you. We open at 6:30 every morning, and close at 9 PM. We offer espresso and espresso based drink, such as capuccino, cafe latte, piccolo and many more. Come over and enjoy a great meal."
-        ))
-//        RestaurantDetailView(restaurant: Restaurants(
-//                title: "Test",
-//                type: .pizzaHouse,
-//                location: "Baku",
-//                image: "",
-//                isFavorite: false
-//            ))
-            .preferredColorScheme(.dark)
+
+struct  RestaurantDetailView_Previews: PreviewProvider {
+    static var previews: some View{
+        NavigationStack{
+            RestaurantDetailView(restaurant: Restaurants(title: "Cafe & Deanded", type: .waffleHouse, location: "Baku", image: "cafedeadend", isFavorite: false, description: "Searching for great breakfast eateries and coffee? This place is for you. We open at 6:30 every morning, and close at 9 PM. We offer espresso and espresso based drink, such as capuccino, cafe latte, piccolo and many more. Come over and enjoy a great meal.", phone: "055-334-89-78"))
+        }
+        .accentColor(.white)
+        .preferredColorScheme(.dark)
+    }
+}
+
+
+           
         
     
-}
+
 
 
