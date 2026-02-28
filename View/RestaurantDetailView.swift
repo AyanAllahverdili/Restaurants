@@ -11,29 +11,37 @@ struct RestaurantDetailView: View {
     var restaurant: Restaurants
 
     var body: some View {
-        ZStack(alignment: .top){
-            Image(restaurant.image)
-                .resizable()
-                .scaledToFill()
-                .frame(minWidth: 0, maxWidth: .infinity)
-                .ignoresSafeArea()
-            
-            Color.black
-                .frame(height: 100)
-                .opacity(0.8)
-                .cornerRadius(20)
-                .padding()
-            
-                .overlay{
-                    VStack(spacing: 5){
-                        Text(restaurant.title)
-                        Text(restaurant.type.description)
-                        Text(restaurant.location)
+        ScrollView{
+            VStack(alignment: .leading, ) {
+                Image(restaurant.image)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(minWidth: 0 ,maxWidth: .infinity)
+                    .frame(height: 445)
+                    .overlay{
+                        VStack{
+                            Image(systemName: "heart")
+                                .frame(minWidth: 0 , maxWidth: .infinity ,minHeight: 0 , maxHeight: .infinity ,alignment: .topTrailing)
+                                .padding()
+                                .font(.system(size: 30))
+                                .foregroundColor(.white)
+                                .padding(.top ,40)
+                            VStack(alignment: .leading, spacing: 5){
+                                Text(restaurant.title)
+                                    .font(.custom("Montserrat-Italic-VariableFont_wght.ttf", size: 35,relativeTo: .largeTitle))
+                                    .bold()
+                                Text(restaurant.type.description)
+                                    .font(.system(.headline, design: .rounded))
+                                    .padding(.all,5)
+                                    .background(Color(.black))
+                            }
+                            .frame(minWidth: 0 , maxWidth: .infinity ,minHeight: 0 , maxHeight: .infinity ,alignment: .bottomLeading)
+                            .foregroundColor(.white)
+                            .padding()
+                        }
                     }
-                    .font(.system(.headline , design: .rounded))
-                    .foregroundStyle(.white)
-                    
-                }
+                Text(restaurant.description)
+            }
         }
         
         .navigationBarBackButtonHidden(true)
@@ -53,11 +61,12 @@ struct RestaurantDetailView: View {
 #Preview {
     RestaurantDetailView(
         restaurant: Restaurants(
-            title: "Test",
-            type: .breakfast,
+            title: "Cafe Deanded",
+            type: .waffleHouse,
             location: "Baku",
             image: "cafedeadend",
-            isFavorite: false
+            isFavorite: false,
+            description: "Searching for great breakfast eateries and coffee? This place is for you. We open at 6:30 every morning, and close at 9 PM. We offer espresso and espresso based drink, such as capuccino, cafe latte, piccolo and many more. Come over and enjoy a great meal."
         ))
 //        RestaurantDetailView(restaurant: Restaurants(
 //                title: "Test",
